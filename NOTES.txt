@@ -103,5 +103,52 @@ Result:
   }
 }
 
+Query Alias:
+{
+  apple: company(id: "1") {
+    id
+    name
+    description 
+  }
+  google: company(id: "2") {
+    id
+    name
+    description 
+  }
+}
+
+Result:
+{
+  "data": {
+    "apple": {
+      "id": "1",
+      "name": "Apple",
+      "description": "iphone"
+    },
+    "google": {
+      "id": "2",
+      "name": "Google",
+      "description": "search"
+    }
+  }
+}
+
+Query Fragments:
+{
+  apple: company(id: "1") {
+    ...companyDetails
+  }
+  google: company(id: "2") {
+    ...companyDetails
+  }
+}
+fragment companyDetails on Company {
+  id 
+  name 
+  description
+}
+
+
+
 
 
