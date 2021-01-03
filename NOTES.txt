@@ -55,3 +55,14 @@ Result:
     }
   }
 }
+
+
+Get company
+
+  company(id: "1") {
+    id
+    name
+    description
+  }
+}
+
