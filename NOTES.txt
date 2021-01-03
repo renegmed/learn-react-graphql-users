@@ -66,3 +66,42 @@ Get company
   }
 }
 
+Get Company With Users 
+{
+  company(id: "2") {
+    id
+    name
+    description
+    users {
+      id 
+      firstName 
+      age  
+    }
+  }
+}
+
+Result:
+{
+  "data": {
+    "company": {
+      "id": "2",
+      "name": "Google",
+      "description": "search",
+      "users": [
+        {
+          "id": "40",
+          "firstName": "Alex",
+          "age": 40
+        },
+        {
+          "id": "41",
+          "firstName": "Nick",
+          "age": 40
+        }
+      ]
+    }
+  }
+}
+
+
+
