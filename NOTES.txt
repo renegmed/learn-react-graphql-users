@@ -149,6 +149,14 @@ fragment companyDetails on Company {
 }
 
 
+Delete User:
 
+mutation {
+  deleteUser(id: "40") {
+    id 
+    firstName 
+    age
+  }
+}
 
 
