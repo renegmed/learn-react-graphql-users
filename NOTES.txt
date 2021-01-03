@@ -5,3 +5,11 @@ $ npm install --save express express-graphql graphql lodash
 
 $ node server.js 
 
+
+Get a user: 
+
+{ user(id:"23"){
+    id,
+    firstName
+  }
+}
