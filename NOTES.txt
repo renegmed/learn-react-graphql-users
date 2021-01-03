@@ -2,3 +2,6 @@ Status: wip
 
 $ npm init
 $ npm install --save express express-graphql graphql lodash
+
+$ node server.js 
+
