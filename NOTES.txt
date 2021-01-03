@@ -24,3 +24,34 @@ http://localhost:3000/users
 $ npm install --save axios 
 
 $ npm install --save nodemon
+
+
+Get user with company:
+{ user(id:"23"){
+    id 
+    firstName 
+    age
+  	company {
+      id
+      name 
+      description
+    }
+	}
+}
+
+Result: 
+
+{
+  "data": {
+    "user": {
+      "id": "23",
+      "firstName": "Bill",
+      "age": 20,
+      "company": {
+        "id": "1",
+        "name": "Apple",
+        "description": "iphone"
+      }
+    }
+  }
+}
