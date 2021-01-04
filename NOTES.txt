@@ -160,3 +160,19 @@ mutation {
 }
 
 
+Edit User:
+
+mutation {
+  editUser(id:"41", age:46, companyId: "1" ) {
+    id 
+    firstName 
+    age  
+    company { 
+      id
+      name 
+      description
+    }  
+  }
+}
+
+
